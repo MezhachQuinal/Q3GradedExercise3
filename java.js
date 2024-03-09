@@ -20,7 +20,7 @@ function generate(){
     }
     var generation = "Generated on: ";
     var date = new Date();
-    var formattedDate = date.toLocaleDateString('en', { timeZoneName: 'short'});
-    var sentenceofdate = generation.concat(innerHTML = formattedDate, ".");
+    var formatDate = date.toLocaleDateString('en', { timeZoneName: 'short'});
+    var sentenceofdate = generation.concat(innerHTML = formatDate, ".");
     document.getElementById("date").innerHTML = sentenceofdate;
 }
